@@ -29,4 +29,4 @@ or
 - After the build is complete you should see below Cucumber Report
 
            ![image](https://user-images.githubusercontent.com/557085/113252859-05a69700-92e2-11eb-9629-646dc79fd1a7.png) 
-            https://user-images.githubusercontent.com/557085/113252911-19ea9400-92e2-11eb-8dee-d21acd373bed.png
+           ![image](https://user-images.githubusercontent.com/557085/113252911-19ea9400-92e2-11eb-8dee-d21acd373bed.png)
