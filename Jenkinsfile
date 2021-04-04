@@ -4,7 +4,7 @@ agent any
        stage('Stage 1') {
         steps {
              withMaven(maven : 'maven_3_2_5'){
-                sh 'mvn clean compile'                  
+                bat 'mvn clean compile'                  
                   }
 
               
@@ -14,7 +14,7 @@ agent any
        stage('Stage 2') {
         steps {
             withMaven(maven : 'maven_3_2_5'){
-                sh 'mvn test'                
+                bat 'mvn test'                
                 }
         	}
        	}
