@@ -3,13 +3,27 @@ agent any
     stages {
        stage('Stage 1') {
         steps {
-            echo "stage 1"
+             withMaven(maven : 'maven_3_6_3'){
+                sh 'mvn clean compile'                  
+                  }
+
+              
         	}
        	}
        	
        stage('Stage 2') {
         steps {
-            echo "stage 2"
+            withMaven(maven : 'maven_3_6_3'){
+                sh 'mvn test'                
+                }
+        	}
+       	}
+       	
+      stage('Cucumber Reports') {
+        steps {
+           cucumber buildStatus: "UNSTABLE",
+           fileIncludePattern: "**/cucumber-report.json",
+           jsonReportDirectory: 'target'
         	}
        	}
     }
