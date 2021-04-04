@@ -2,7 +2,6 @@ pipeline {
     stages {
        stage('Stage 1') {
         steps {
-        st
             echo "stage 1"
         	}
        	}
